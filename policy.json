@@ -1,0 +1,11 @@
+{
+  "memory_regions": [
+    {"start": 268435456, "end": 285212672, "privilege": "dma_buffer", "name": "gpu_framebuffer"},
+    {"start": 536870912, "end": 541065216, "privilege": "dma_buffer", "name": "nic_packet_buffer"},
+    {"start": 4026531840, "end": 4027580416, "privilege": "kernel_stack", "name": "kernel_stack"}
+  ],
+  "device_profiles": [
+    {"device_id": "gpu-0", "device_type": "GPU", "trusted": true, "allowed_regions": ["gpu_framebuffer"], "allowed_directions": ["read", "write"], "max_transfer_size": 8388608, "max_requests_per_second": 30000},
+    {"device_id": "nic-0", "device_type": "NIC", "trusted": true, "allowed_regions": ["nic_packet_buffer"], "allowed_directions": ["read", "write"], "max_transfer_size": 1048576, "max_requests_per_second": 100000}
+  ]
+}

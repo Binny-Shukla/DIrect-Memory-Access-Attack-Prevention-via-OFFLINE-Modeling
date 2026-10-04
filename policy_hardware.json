@@ -1,0 +1,399 @@
+{
+  "memory_regions": [
+    {
+      "start": 268435456,
+      "end": 805306368,
+      "privilege": "dma_buffer",
+      "name": "gpu_framebuffer"
+    },
+    {
+      "start": 1073741824,
+      "end": 1207959552,
+      "privilege": "dma_buffer",
+      "name": "nic_packet_buffer"
+    },
+    {
+      "start": 1342177280,
+      "end": 1610612736,
+      "privilege": "dma_buffer",
+      "name": "nvme_dma_pool"
+    },
+    {
+      "start": 4026531840,
+      "end": 4028628992,
+      "privilege": "kernel_stack",
+      "name": "kernel_stack"
+    }
+  ],
+  "device_profiles": [
+    {
+      "device_id": "PCI_10EC_8168",
+      "device_type": "NIC",
+      "trusted": true,
+      "allowed_regions": [
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 2097152,
+      "max_requests_per_second": 100000
+    },
+    {
+      "device_id": "PCI_8086_438B",
+      "device_type": "PCI_Peripheral",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer",
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 1048576,
+      "max_requests_per_second": 10000
+    },
+    {
+      "device_id": "PCI_8086_43E0",
+      "device_type": "PCI_Peripheral",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer",
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 1048576,
+      "max_requests_per_second": 10000
+    },
+    {
+      "device_id": "PCI_8086_9A03",
+      "device_type": "PCI_Peripheral",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer",
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 1048576,
+      "max_requests_per_second": 10000
+    },
+    {
+      "device_id": "PCI_8086_09AB",
+      "device_type": "NVMe/Storage",
+      "trusted": true,
+      "allowed_regions": [
+        "nvme_dma_pool"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 4194304,
+      "max_requests_per_second": 250000
+    },
+    {
+      "device_id": "PCI_8086_43E8",
+      "device_type": "Host_Controller",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer",
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 1048576,
+      "max_requests_per_second": 10000
+    },
+    {
+      "device_id": "PCI_8086_43EF",
+      "device_type": "PCI_Peripheral",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer",
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 1048576,
+      "max_requests_per_second": 10000
+    },
+    {
+      "device_id": "PCI_8086_9A17",
+      "device_type": "Host_Controller",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer",
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 1048576,
+      "max_requests_per_second": 10000
+    },
+    {
+      "device_id": "PCI_8086_43C8",
+      "device_type": "PCI_Peripheral",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer",
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 1048576,
+      "max_requests_per_second": 10000
+    },
+    {
+      "device_id": "PCI_8086_9A11",
+      "device_type": "PCI_Peripheral",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer",
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 1048576,
+      "max_requests_per_second": 10000
+    },
+    {
+      "device_id": "PCI_10DE_2291",
+      "device_type": "PCI_Peripheral",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer",
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 1048576,
+      "max_requests_per_second": 10000
+    },
+    {
+      "device_id": "PCI_8086_9A1F",
+      "device_type": "Host_Controller",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer",
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 1048576,
+      "max_requests_per_second": 10000
+    },
+    {
+      "device_id": "PCI_8086_43ED",
+      "device_type": "Host_Controller",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer",
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 1048576,
+      "max_requests_per_second": 10000
+    },
+    {
+      "device_id": "PCI_8086_43A3",
+      "device_type": "PCI_Peripheral",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer",
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 1048576,
+      "max_requests_per_second": 10000
+    },
+    {
+      "device_id": "PCI_8086_9A2B",
+      "device_type": "PCI_Peripheral",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer",
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 1048576,
+      "max_requests_per_second": 10000
+    },
+    {
+      "device_id": "PCI_8086_9A0B",
+      "device_type": "NVMe/Storage",
+      "trusted": true,
+      "allowed_regions": [
+        "nvme_dma_pool"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 4194304,
+      "max_requests_per_second": 250000
+    },
+    {
+      "device_id": "PCI_8086_9A68",
+      "device_type": "GPU",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 33554432,
+      "max_requests_per_second": 50000
+    },
+    {
+      "device_id": "PCI_8086_43B6",
+      "device_type": "PCI_Peripheral",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer",
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 1048576,
+      "max_requests_per_second": 10000
+    },
+    {
+      "device_id": "PCI_8086_43BF",
+      "device_type": "PCI_Peripheral",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer",
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 1048576,
+      "max_requests_per_second": 10000
+    },
+    {
+      "device_id": "PCI_8086_9A0D",
+      "device_type": "PCI_Peripheral",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer",
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 1048576,
+      "max_requests_per_second": 10000
+    },
+    {
+      "device_id": "PCI_8086_9A26",
+      "device_type": "PCI_Peripheral",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer",
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 1048576,
+      "max_requests_per_second": 10000
+    },
+    {
+      "device_id": "PCI_8086_9A01",
+      "device_type": "PCI_Peripheral",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer",
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 1048576,
+      "max_requests_per_second": 10000
+    },
+    {
+      "device_id": "PCI_14C3_7961",
+      "device_type": "NIC",
+      "trusted": true,
+      "allowed_regions": [
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 2097152,
+      "max_requests_per_second": 100000
+    },
+    {
+      "device_id": "PCI_10DE_25AD",
+      "device_type": "GPU",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 33554432,
+      "max_requests_per_second": 50000
+    },
+    {
+      "device_id": "PCI_8086_43A4",
+      "device_type": "PCI_Peripheral",
+      "trusted": true,
+      "allowed_regions": [
+        "gpu_framebuffer",
+        "nic_packet_buffer"
+      ],
+      "allowed_directions": [
+        "read",
+        "write"
+      ],
+      "max_transfer_size": 1048576,
+      "max_requests_per_second": 10000
+    }
+  ]
+}
